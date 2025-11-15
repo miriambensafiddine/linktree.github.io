@@ -3,40 +3,41 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
-  font-family: 'Gerstner-Bold';
-  font-style:normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(font/GerstnerBQ-Bold.woff2) format('woff2');
+    font-family: 'Gerstner-Bold';
+    font-style:normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/GerstnerBQ-Bold.woff2) format('woff2');
 }
 @font-face {
-  font-family: 'Gerstner-Italic';
-  font-style:italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(font/GerstnerBQ-Italic.woff2) format('woff2');
+    font-family: 'Gerstner-Italic';
+    font-style:italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/GerstnerBQ-Italic.woff2) format('woff2');
 }
 @font-face {
-  font-family: 'Gerstner-Light';
-  font-style:normal;
-  font-weight:400;
-  font-display: swap;
-  src: url(font/GerstnerBQ-Light.woff2) format('woff2');
+    font-family: 'Gerstner-Light';
+    font-style:normal;
+    font-weight:400;
+    font-display: swap;
+    src: url(font/GerstnerBQ-Light.woff2) format('woff2');
   
 }
-/* Responsive typography using fluid scaling */
+
 html {
     font-size: calc(12px + 0.390625vw);
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.25;
     max-width: 1200px;
-  min-height: 4000px;
+    min-height: 4000px;
     background-color:#040504;
     padding:0;
     margin:0;
@@ -57,19 +58,20 @@ header{
 
 
 }
-ul, li{
+ul, 
+li {
   list-style: none;
 }
-.bg-mask{
-   /* background-image:  url('/img/miriam-bensafiddine.jpeg'),url('/img/bg-mask.png');*/
+
+.bg-mask {
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
-    background-position:bottom;
+    background-position:center center;
     visibility:visible;
     width: 100%;
     max-width:1200px;
-    min-height: 4556px;
+    min-height: 4200px;
     position: absolute;
     top: 0;
     left:0;
@@ -77,14 +79,14 @@ ul, li{
     padding:0;  
 }
 
-img{
+img {
     width: 100%;
     height: auto;
     padding:0;
     margin:0 auto; 
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -96,62 +98,65 @@ h3 {
   font-family: 'Gerstner-Bold';
 
 }
-h1{ 
-  padding-top:1rem;
-  color:#2a3d22;  
-  mix-blend-mode: exclusion;
+h1 { 
+    font-size: 1em;
+    color:#2a3d22;  
+    mix-blend-mode: exclusion;
 }
-h2{
-  font-family: 'Gerstner-Italic';
-  letter-spacing: 1.3px;
-color:#10110f;
- mix-blend-mode: difference;
-}
-
-p {
-  font-family: 'Gerstner-Light';
+h2 {
+    font-family: 'Gerstner-Italic';
+     font-size: .90em;
+    letter-spacing: 1px;
+    color:#10110f;
+    mix-blend-mode: difference;
 }
 
-a{
+p { 
+    font-family: 'Gerstner-Light';
+}
+
+a:link {
     color:inherit;
-    text-decoration: underline;  
-    transition: all 0.3 ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;  
+    transition: all 0.6s ease;
 }
 
-a:hover{
-   text-decoration: none;
+a:visited {
+    color: palegoldenrod;
 }
 
-article {
-  padding:1rem;
+a:hover {
+    color: palegreen;
+    text-decoration: underline;
+    text-decoration-color: inherit;
 }
 
-footer{
-   display:block;
-    width:100vw;
+a:active {
+    color:palegreen;
+} 
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     font-size: .85em;
     text-align: center;
     padding:1rem;
     background-color: #010500;
-    color:#5e894f;
-    position: relative;
-    margin:0;
-    left:0;
-    bottom: 0;
-    z-index: 3;
+    color:#5e894f; 
 }
 
-/* icons */
-.icon{
-  width:36px;
-  height:36px;
-  display:inline-block;
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center;
-  margin:auto;
-  padding:8px;
-  filter: hue-rotate(20deg)
+.icon {
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:auto;
+    padding:8px;
 }
 
 #codepen {
@@ -210,72 +215,64 @@ footer{
  background-image: url('icons/linkedin_hover.svg');
   transition: all 0.9s ease;
 }
-#envelop {
-  background-image: url('icons/envelop.svg');
-  transition: all 0.3s ease;
-}
-#envelop:hover{
-   background-image: url('icons/envelop_hover.svg');
-}
-#link{
-  background-image: url('icons/link.svg');
-}
-#link:hover{
-   background-image: url('icons/link_hover.svg');
-}
-.space{
-  height:300px;
+
+.space {
+    height:300px;
 }
 
-hr{
-  border-color: #5e894f;
-  margin-top:.8rem;
-  margin-bottom:1.8rem;
+hr {
+    border-color: #5e894f;
+    margin-top:.8rem;
+    margin-bottom:1.8rem;
 }
-pre{
+
+pre {
     color:#304629; 
     overflow-x:hidden; 
     font-size:10px;
 }
-.container{
+
+.container {
     width:100%;
     margin:auto;
 }
-.flex-container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap:3rem;
+
+.flex-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
 }
-.box1, .box2{
-  color: #000000;
-  padding: 2rem;
-  flex: 1 1 300px;
-  max-width: 400px;
-  margin:auto;
-  background: rgba(218, 223, 219, 0.523);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #5e894f;
+
+.box1, .box2 {
+    color: #000000;
+    padding: 2rem;
+    flex: 1 1 300px;
+    max-width: 400px;
+    margin:auto;
+    background: rgba(218, 223, 219, 0.523);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #5e894f;
 }
 
 /* For devices with a minimum width of 992px (Large) */
 @media screen and (min-width: 992px){
-  .flex-container{
-    justify-content: space-evenly;
-  }
-  .box1{
-    margin-left:1rem;
-    max-width:600px;
-  }
-  .box2{
-    margin:auto;
-  }
+    .flex-container {
+        justify-content: space-evenly;
+    }
+    .box1 {
+        margin-left:1rem;
+        max-width:600px;
+    }
+    .box2{
+        margin:auto;
+    }
 
- h1 {
+    h1 {
         font-size: 2rem;
     }
     
